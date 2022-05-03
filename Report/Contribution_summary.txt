@@ -1,3 +1,13 @@
+This project involves the following tasks: (a) building VTOL Skywalker X8 UAV; (b) doing the flight test of the VTOL UAV without payload in Yuen Long; (c) doing the flight test analysis of the VTOL UAV; (d) doing 3D CAD drawing of composited wings based on some research data; (e) doing CFD simulation of the Clark Y airfoil and the airfoil of the Skywalker X8; (f) confirming the CAD drawing design of the composited wings; (g) designing the mold of the composited wing; (h) manufacturing the components of the composited wing in Industrial Centre; (i) writing the report.
+
 Athena
+We discussed all parts in this project. We also worked together in part (a), (b), (c), (f), (h) and (i) and I concentrated on part (a), (b), (d), (e), (g), and (h). I was mainly responsible for coordinating the tasks with my groupmates. I also did the final checking of the content of this report. 
+I chiefly wrote the section 1.1 - 1.2, 2.3 - 2.4, 3.1, 3.3 - 3.4, 4.1 - 4.2, 4.4 - 4.5, 4.6.1 - 4.6.3, 5.1 – 5.3, 6, and the appendix I to VI.
+
 Kylie
+We basically discussed and worked together on all parts and I mainly concentrated on the part of the section of 3D scanning of the Skywalker X8, and also identify the definition of VTOL and UAV. In addition, I also concentrated in (a), (b), (d), (h). I was also responsible for the typesetting of the report.
+For the report writing, the content that was generally distributed according to the main work done by each groupmate. Therefore, I mainly focus on the section mentioned above and also the Gantt chart for the actual progress.
+
 Tim
+We worked together on literature reviewing and I focused on the comparison between different UAVs, material selection and the manufacturing of the composite wings as contained in section 2.3 and 2.5 respectively.
+I was mainly responsible for (a), (e) and (h) in project tasks and meanwhile assisted in the other parts as well. For the report writing, the content was generally distributed according to the main works done by each groupmate so I have written the parts related to the composite material and the respective manufacturing processes in this report in chapter 4, 5 and 6.
