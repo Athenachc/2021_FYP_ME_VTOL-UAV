@@ -1,1 +1,53 @@
+Setting of simulation of airfoils in Ansys Fluent
 
+[In Geometry]
+1. Import coordinates of airfoils (.txt files)
+z-coordinates must be 0 for airfoils (2D)
+Can simply download from the database on the internet
+
+2. Decide the dimension of wind tunnel (semi-circle & square)
+Calculate blockage ratio (Blockage ratio = thickness of airfoil / diameter or height of wind tunnel)
+Suggestion: blockage ratio <= 5%
+
+[In Setup (do not need really set it, just select the model for the steps in [Mesh] by reading some theses etc)]
+3. Model selection in Ansys Fluent
+Spalart-Allmaras Turbulence Model if y plus < 1 
+Other models for turbulent flow: k-epsilon & k-omega (if y plus > 30)
+
+[In Mesh]
+4.1 Calculation of length of first element of the edge in mesh (for edge sizing of the mesh)
+Y plus calculator: https://www.cadence.com/en_US/home/tools/system-analysis/computational-fluid-dynamics/y-plus.html 
+The length of first element of the edge in mesh can be found by calculating y plus.
+Desired y plus can be determined by model selection in step 3.
+To get the desired length of first element of the edge in mesh (edge length is determinded by the dimension of wind tunnel), bias factor and number of division should be changed in "edge sizing".
+To save the calculation load of the computer, it is suggested that the no. of division should be as small as possible. For our case, our bias factor = 19500 while our no. of division = 200 only.
+
+4.2 Name the section (e.g. inlet, outlet, airfoil)
+
+[In Setup]
+5. Check the result of y plus by doing simulation
+Use the selected model in step 3
+Air as fluid
+Define the inlet velocity, report definitions, etc for your typical case
+Set Solution Methods (second order is suggested --> more accurate solution)
+Set Residual Monitors (suggestion: absolute criteria = 1e-06)
+Set Initialization: standard initialization --> compute from inlet
+Run Calcualtion: Number of iterations: 1000 or above --> simulation will be stopped when the solution is converged (convergence test) (no. of iterations can be less than the setting's) or it will be stopped until it reach the setting's no. of iterations
+After the simulation is done, plot the contour of the "Wall Yplus" to see whether the y plus of the simulation can reach the expectation or not
+
+6. Change x-component and y-component of the "Velocity Inlet", "cd", and "cl" (Optional: it is the setting for different AOA cases)
+Inlet velocity (x,y) = (cos(AOA), sin(AOA))
+cl (x,y) = ((-1)*sin(AOA), cos(AOA))
+cd (x,y) = (cos(AOA), sin(AOA))
+P.s. AOA is in radians!
+
+7. Convergence test 
+Check the "console" after simulation
+convergence test is done when "solution is converged" is printed on the "console"
+
+[In mesh]
+8. Grid independence test
+increase the no. of divisions --> check the results after simulation
+if the differences of the results are small, e.g. < 1%, grid indenpence test is done
+This means no matter the no. of divisions increases or not, the simulation results will not be affected --> grid independence
+Then, choose the possible lower no. of divisions to save the calculation load of the computer (save more time for the simulation)
