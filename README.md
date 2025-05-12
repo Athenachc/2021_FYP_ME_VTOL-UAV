@@ -1,5 +1,6 @@
 # 2021-22 HKPolyU ME FYP (VTOL UAV)
-Project title: Development of an Aerial Air Quality Monitoring Platform Based on Vertical Takeoff and Landing (VTOL) Unmanned Aerial Vehicle (UAV)
+## Project title 
+Development of an Aerial Air Quality Monitoring Platform Based on Vertical Takeoff and Landing (VTOL) Unmanned Aerial Vehicle (UAV)
 
 ## Abstract
 A Vertical take-off and landing (VTOL) unmanned aerial vehicle (UAV) has the hybrid characteristics of a multi-rotor and a fixed-wing UAV which allow it to obtain distinctive performance in both duration, speed, and maneuverability among the other types. Therefore, it is suggested to be used for air quality monitoring in the Greater Bay Area. To achieve the specific needs of the task, this project would develop a new design of the VTOL UAV with the concern of capacity, strength, and aerodynamics.
